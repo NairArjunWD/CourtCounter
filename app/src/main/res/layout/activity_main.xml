@@ -24,11 +24,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:text="Team A"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif-medium"
                 android:textColor="#616161"
+                android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -39,11 +39,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
+                android:fontFamily="sans-serif-light"
                 android:gravity="center_horizontal"
                 android:text="0"
-                android:textSize="56sp"
                 android:textColor="#000000"
-                android:fontFamily="sans-serif-light"
+                android:textSize="56sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -53,37 +53,37 @@
                 android:id="@+id/threePointsForA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp"
                 android:onClick="threePointsForA"
                 android:text="+3 POINTS" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp"
                 android:onClick="twoPointsForA"
                 android:text="+2 POINTS" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="freeThrowForA"
-                android:text="free throw"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:onClick="freeThrowForA"
+                android:text="free throw"
                 android:textAllCaps="true" />
 
         </LinearLayout>
 
         <View
-            android:layout_marginTop="16dp"
-            android:background="@android:color/darker_gray"
             android:layout_width="1dp"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray">
 
         </View>
 
@@ -100,11 +100,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
-                android:textSize="14sp"
-                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:text="Team B"
-                android:fontFamily="sans-serif-medium"
+                android:textColor="#616161"
+                android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -115,11 +115,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
+                android:fontFamily="sans-serif-light"
                 android:gravity="center_horizontal"
                 android:text="0"
-                android:textSize="56sp"
                 android:textColor="#000000"
-                android:fontFamily="sans-serif-light"
+                android:textSize="56sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -129,18 +129,18 @@
                 android:id="@+id/threePointsForB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp"
                 android:onClick="threePointsForB"
                 android:text="+3 POINTS" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp"
                 android:onClick="twoPointsForB"
                 android:text="+2 POINTS" />
 
@@ -163,9 +163,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:layout_marginBottom="8dp"
         android:onClick="reset"
         android:text="Reset"
         android:textAllCaps="true"
