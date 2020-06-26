@@ -16,11 +16,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     int scoreForTeamA = 0;
+    int scoreForTeamB = 0;
 
     /**
      * Adds 3 to the given score for Team A.
      */
-    public void threePoints(View view) {
+    public void threePointsForA(View view) {
         scoreForTeamA = scoreForTeamA + 3;
         displayForTeamA(scoreForTeamA);
     }
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Adds 2 to the given score for Team A.
      */
-    public void twoPoints(View view) {
+    public void twoPointsForA(View view) {
         scoreForTeamA = scoreForTeamA + 2;
         displayForTeamA(scoreForTeamA);
     }
@@ -36,16 +37,48 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Adds 1 to the given score for Team A.
      */
-    public void freeThrow(View view) {
+    public void freeThrowForA(View view) {
         scoreForTeamA = scoreForTeamA + 1;
         displayForTeamA(scoreForTeamA);
     }
 
     /**
-     * Displays the given score for Team A.
+     * Displays the given score for Team B.
      */
     public void displayForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    /**
+     * Adds 3 to the given score for Team B.
+     */
+    public void threePointsForB(View view) {
+        scoreForTeamB = scoreForTeamB + 3;
+        displayForTeamB(scoreForTeamB);
+    }
+
+    /**
+     * Adds 2 to the given score for Team B.
+     */
+    public void twoPointsForB(View view) {
+        scoreForTeamB = scoreForTeamB + 2;
+        displayForTeamB(scoreForTeamB);
+    }
+
+    /**
+     * Adds 1 to the given score for Team B.
+     */
+    public void freeThrowForB(View view) {
+        scoreForTeamB = scoreForTeamB + 1;
+        displayForTeamB(scoreForTeamB);
+    }
+
+    /**
+     * Displays the given score for Team B.
+     */
+    public void displayForTeamB(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
 }
