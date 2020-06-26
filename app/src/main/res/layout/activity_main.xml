@@ -22,7 +22,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="3"
+        android:text="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -35,19 +35,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="+3 POINTS"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:id="@+id/threePoints"
+        android:onClick="threePoints"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="+2 POINTS"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:onClick="twoPoints"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="free throw"
         android:textAllCaps="true"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:onClick="freeThrow"/>
 
 </LinearLayout>

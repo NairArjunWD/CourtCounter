@@ -3,6 +3,7 @@ package com.example.courtcounter;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -11,6 +12,28 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//        displayForTeamA(7);
+    }
+
+    /**
+     * Adds 3 to the given score for Team A.
+     */
+    public void threePoints(View view) {
+        displayForTeamA(3);
+    }
+
+    /**
+     * Adds 3 to the given score for Team A.
+     */
+    public void twoPoints(View view) {
+        displayForTeamA(2);
+    }
+
+    /**
+     * Adds 3 to the given score for Team A.
+     */
+    public void freeThrow(View view) {
+        displayForTeamA(1);
     }
 
     /**
