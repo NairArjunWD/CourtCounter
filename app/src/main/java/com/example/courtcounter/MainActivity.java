@@ -15,25 +15,30 @@ public class MainActivity extends AppCompatActivity {
 //        displayForTeamA(7);
     }
 
+    int scoreForTeamA = 0;
+
     /**
      * Adds 3 to the given score for Team A.
      */
     public void threePoints(View view) {
-        displayForTeamA(3);
+        scoreForTeamA = scoreForTeamA + 3;
+        displayForTeamA(scoreForTeamA);
     }
 
     /**
-     * Adds 3 to the given score for Team A.
+     * Adds 2 to the given score for Team A.
      */
     public void twoPoints(View view) {
-        displayForTeamA(2);
+        scoreForTeamA = scoreForTeamA + 2;
+        displayForTeamA(scoreForTeamA);
     }
 
     /**
-     * Adds 3 to the given score for Team A.
+     * Adds 1 to the given score for Team A.
      */
     public void freeThrow(View view) {
-        displayForTeamA(1);
+        scoreForTeamA = scoreForTeamA + 1;
+        displayForTeamA(scoreForTeamA);
     }
 
     /**
