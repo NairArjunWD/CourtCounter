@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -80,5 +81,15 @@ public class MainActivity extends AppCompatActivity {
     public void displayForTeamB(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
+    }
+
+    /**
+     * Reset's the scores back to 0 for both Team A and Team B
+     */
+    public void reset(View view) {
+        scoreForTeamA = 0;
+        scoreForTeamB = 0;
+        displayForTeamA(scoreForTeamA);
+        displayForTeamB(scoreForTeamB);
     }
 }
